@@ -1,0 +1,90 @@
+
+.newsletter-wrap
+    background: black center / cover no-repeat
+    width: 100%
+    height: 87rem
+    scale: crop
+
+.newsletter
+    &__quotes
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 20rem
+        &_info
+            color: $white
+            padding-top: 30rem
+            margin-left: 11rem
+            h3
+                @include small-topic-size
+            h2
+                text-transform: uppercase
+                padding-top: 1rem
+                padding-bottom: 5rem
+                font-size: 7rem
+                line-height: 8rem
+                letter-spacing: .3rem
+            p
+                font-size: 1.8rem
+                line-height: 2.2rem
+                font-weight: 400
+                padding-bottom: 4rem
+            button
+                padding-top: 3rem
+                background-color: $orange
+                font-size: 1.6rem
+                color: $black
+                line-height: 2.1rem
+                text-align: center
+                padding: 2rem 3rem
+                border-radius: 1.5rem
+                transition: .6s
+            button:hover
+                background-color: $white
+        &_comments
+            padding-top: 15rem
+
+.article
+    background-color: #ffffff27
+    margin-bottom: 3rem
+    max-width: 48rem
+    border-radius: 1rem
+    padding-left: 1.2rem
+    margin-left: 9rem
+    &__name
+        display: grid
+        grid-template-columns: 17% 73% 10% 
+        padding-top: 1rem
+        span
+            padding-top: 1.8rem
+            @include small-topic-size
+            color: $orange
+        &_img
+            padding-top: 1.8rem
+    &__comment
+        font-size: 1.8rem
+        color: $white
+        line-height: 2.45rem
+        padding-top: 2rem
+        padding-bottom: 1rem
+        font-weight: 400
+    &__date
+        color: $white
+        font-size: 1.4rem
+        line-height: 1.9rem
+        font-weight: 400
+        padding-bottom: 2rem
+
+.article-2
+    background-color: #ffffff27
+    margin-bottom: 3rem
+    max-width: 48rem
+    border-radius: 1rem
+    padding-left: 1.2rem
+
+.article-3
+    margin-left: 6rem
+    background-color: #ffffff27
+    margin-bottom: 3rem
+    max-width: 48rem
+    border-radius: 1rem
+    padding-left: 1.2rem

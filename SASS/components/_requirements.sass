@@ -1,0 +1,49 @@
+
+.requirements-wrap
+    background: url(../img/bgimage4.jpg) center / cover no-repeat
+    width: 100%
+    height: 96rem
+    scale: crop
+
+.requirements
+    &__header
+        text-transform: uppercase
+        padding-top: 10rem
+        text-align: center
+        h3
+            font-size: 2.4rem
+            line-height: 2.4rem
+            letter-spacing: .2rem
+            color: $white
+        h2
+            @include big-topic-size
+    &__system
+        color: $white
+        margin-top: 13rem
+        margin-left: 15rem
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 4rem
+        &_item
+            h4
+                @include small-topic-size
+                color: $orange
+            p
+                font-size: 1.8rem
+                line-height: 2.2rem
+                color: $white
+                padding-top: 1rem
+        // &_item:last-child
+            // display: block
+            // text-align: center
+        // td
+        //     padding-top: 3rem
+        //     padding-bottom: 3rem
+        //     padding-left: 2rem
+
+// table, th, td 
+//     border: 1px solid white
+//     border-collapse: collapse
+
+// table
+//     width: 60rem

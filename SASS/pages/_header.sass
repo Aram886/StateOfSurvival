@@ -1,0 +1,81 @@
+.header-wrap
+    background: url(../img/Group1.jpg) center / cover no-repeat
+    width: 100%
+    height: 96rem
+    scale: crop
+
+.header
+    &__nav
+        display: grid
+        // grid-template-columns: 25% 60% 15%
+        grid-template-columns: 1fr 2fr 1fr
+        li
+            display: inline-block
+        img
+            margin-top: 2rem
+            margin-left: 12rem
+        div
+            a
+                color: $white
+                text-decoration: none
+                font-size: 1.6rem
+                letter-spacing: 10%
+                line-height: 1.6rem
+                transition: .4s
+            a:hover
+                color: $black
+        &_menu
+            margin-left: 9rem
+            margin-top: 4rem
+            li
+                padding-left: 2rem
+        &_icons
+            margin-top: 1rem
+            margin-left: 10rem
+            li
+                max-width: 4rem
+                a
+                    display: flex
+                    float: right
+                    color: $white
+                    text-decoration: none
+                    font-size: 1.4rem
+                    letter-spacing: 10%
+                    line-height: 1.6rem   
+                    transition: .4s
+
+    &__info
+        margin-top: 17rem
+        text-align: center 
+        h1
+            @include big-topic-size
+        h3
+            padding: 1.5rem 0rem
+            @include small-topic-size
+        button
+            text-decoration: none
+            outline: none
+            border: none
+            background-color: $orange
+            color: $black
+            font-size: 1.6rem
+            line-height: 2.1rem
+            padding: 1.5rem
+            transition: .6s
+            cursor: pointer
+            border-radius: 0.5rem
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset
+            span
+                margin-left: 0.5rem
+        button:hover
+            background-color: $white
+                
+    
+    &__back
+        text-align: center
+        margin-top: 40rem
+        p
+            color: $white
+            font-size: 1.6rem
+            line-height: 2.2rem
+            font-weight: 700

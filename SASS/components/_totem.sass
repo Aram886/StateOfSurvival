@@ -1,0 +1,59 @@
+
+::placeholder
+    color: $orange
+
+.totem-wrap
+    background: black center / cover no-repeat
+    width: 100%
+    height: 87rem
+    scale: crop
+
+.totem
+    &__about
+        display: grid
+        grid-template-columns: 48% 52% 
+        &_img  
+            img
+                padding-top: 5rem
+                margin: auto 
+        &_info
+            padding-top: 20rem
+            color: $white
+            h3
+                @include small-topic-size
+                padding-bottom: 1rem
+            h2
+                text-transform: uppercase
+                font-size: 5.5rem
+                line-height: 5.5rem
+                letter-spacing: .3rem
+                color: $white
+                padding-bottom: 4rem
+            p
+                font-size: 1.8rem
+                line-height: 2.2rem
+                color: $white
+                padding-bottom: 8rem
+                width: 66rem
+            div
+                input
+                    border: none
+                    text-decoration: none
+                    outline: none
+                    color: $orange
+                    padding: 1.5rem 0rem 1.5rem 1.5rem
+                    width: 40rem
+                    background-color: #ffffff27
+                    border-radius: .5rem
+                button
+                    color: $black
+                    background-color: $orange
+                    padding: 1.5rem 5rem 1.5rem 5rem
+                    border: none
+                    text-decoration: none
+                    border-radius: .5rem
+                    margin-left: 1rem
+                    border-radius: 1.5rem
+                    transition: .6s
+                button:hover
+                    background-color: $white
